@@ -1,2 +1,2 @@
 # angular
-It's about angular 
+It's about angular. init commit
