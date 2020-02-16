@@ -6,29 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./assignment-two.component.css']
 })
 export class AssignmentTwoComponent implements OnInit {
-
-  userName : string = "";
-  disableButton:boolean = true;
-  constructor() { }
-
+  userName: string = '';
   ngOnInit(): void {
+    throw new Error("Method not implemented.");
   }
 
-  catchInput(event: Event){
-   this.userName = (<HTMLInputElement>event.target).value;
-   console.log(this.userName.length);
-   if(this.userName.length > 0){
-     this.disableButton = false;
-   }
-   else {
-     this.disableButton = true;
-   }
-  }
-
-  resetUserName(){
-    this.userName = "";
-    this.disableButton = true;
-    console.log("Reset is called");
-  }
 
 }

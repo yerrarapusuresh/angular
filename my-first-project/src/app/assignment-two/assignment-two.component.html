@@ -1,5 +1,5 @@
 <h1> Assignment Two</h1>
 
-<p> User Name <input name = "User Name"type="text" [(ngModel)] = "userName" (input)= "catchInput($event)"> </p>
+<p> User Name <input type="text" [(ngModel)] = "userName" > </p>
 <p>UserName is {{userName}}</p>
-<button [disabled] = "disableButton" (click)="resetUserName()"> Reset Button</button>
+<button [disabled] = "userName === ''" (click)="userName = ''"> Reset Button</button>
