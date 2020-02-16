@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class ServerComponent {
     serverNumber: number = 10;
     serverStatus: string = ' Server is offline';
+    serverName: string = "";
 
 
     isAllowed:boolean = false;
@@ -22,5 +23,10 @@ export class ServerComponent {
     }
     changeServerStatus() {
         this.serverStatus = "server is started";
+    }
+
+    updateServerName(event: Event){
+        console.log(event);
+        this.serverName = (<HTMLInputElement>event.target).value;
     }
 }

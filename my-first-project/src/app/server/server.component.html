@@ -1,2 +1,3 @@
 <button [disabled] = "!isAllowed" (click) = "changeServerStatus()"> click to start server</button>
-<p> Server Status {{serverStatus}} </p>
+<input type="text" (input) = "updateServerName($event)">
+<p> Server Status {{serverStatus}}  server name is {{serverName}}</p>
