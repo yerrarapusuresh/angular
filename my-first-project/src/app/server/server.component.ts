@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ServerComponent {
     serverNumber: number = 10;
-    serverStatus: string = 'Offline';
+    serverStatus: string = ' Server is offline';
+
 
     isAllowed:boolean = false;
     constructor(){
@@ -18,5 +19,8 @@ export class ServerComponent {
 
     getServerStatus() {
         return this.serverStatus;
+    }
+    changeServerStatus() {
+        this.serverStatus = "server is started";
     }
 }

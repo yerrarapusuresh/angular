@@ -1,4 +1,2 @@
-button.btn.btn-primary
-<h2>{{'Server'}}  number: {{serverNumber}} status: {{getServerStatus()}} </h2>
-<button class = "btn btn-primary" [disabled]> Button </button>
-<button type="button" class="btn btn-primary" [disabled]="isAllowed">Primary</button>
+<button [disabled] = "!isAllowed" (click) = "changeServerStatus()"> click to start server</button>
+<p> Server Status {{serverStatus}} </p>
