@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ServerComponent {
     serverNumber: number = 10;
     serverStatus: string = ' Server is offline';
-    serverName: string = "";
+    serverName: string = "Hi There";
 
 
     isAllowed:boolean = false;
