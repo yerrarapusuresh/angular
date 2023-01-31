@@ -1,0 +1,14 @@
+{
+  "name": "typescripdemo",
+  "version": "1.0.0",
+  "description": "it's tutorial project for type script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suresh Yerrarapu",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}
