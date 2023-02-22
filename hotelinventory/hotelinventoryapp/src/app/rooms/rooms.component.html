@@ -1,3 +1,10 @@
-<p>Welcome to {{hotelName}}</p>
-The number of room in {{hotelName}}:
-<div [innerText]="numberOfRooms"></div>
+<app-header></app-header>
+
+<div [hidden]="toggle">
+    The number of room in {{hotelName}}:
+    <div #numberOfRooms></div>
+</div>
+
+<app-rooms-list [rooms]="roomList" (selectedRoom)="selectedRoom($event)"></app-rooms-list>
+
+<button (click)="toggleFunc()">Toggle Rooms</button>
